@@ -1,0 +1,50 @@
+@use './variables.scss' as *;
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../image/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.weather-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.unit {
+    display: flex;
+    flex-direction: column;
+}
+
+    
+@for $index from 1 through 6 {
+    h#{$index} {
+        color:$white;
+        margin-left: 1em;
+        font-family: $fontHeading;
+    }
+}
