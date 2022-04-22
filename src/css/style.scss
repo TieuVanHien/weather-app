@@ -1,20 +1,58 @@
 @use './container.scss' as *;
+@use './variables.scss' as *;
 
 .weather-container {
-    width: 80%;
+    width:80%;
     height: 80%;
 
-    .weather-card {
-        margin-top: 3em;
-        width: 80%;
-        height: 70%;
-       
-       .features {
-           width: 80%;
-            display: flex;
-            box-shadow: 0px 5px 5px 2px rgba(0,0,0,0.32);   
+    .search-bar {
+        border-radius: 0.5em;
+        width: 50%;
+        background-color: rgba(255,255,255,0.3); 
+        border-color: $white;
+        label {
+            color: $white;
+        }
+        input {
+            color: $white;
         }
     }
 
+    .card {
+        margin-top: 3em;
+        
+       .card-container {
+            .temp {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                background-color: rgba(255,255,255,0.2);  
+                border-radius: 0.5em;
+                h1 {
+                   margin: 0;
+                    font-size: 5em;
+                }
+                h2 {
+                    margin-top: 1.5em;
+                    margin-left: 0;
+                    margin-bottom: 1.5em;
+                }
+            }
+            .features {
+                width: 50%;
+                height:auto;
+                display: flex;
+                justify-content: space-around;
+                background-color: rgba(255,255,255,0.2);   
+                border-radius: 0.5em;
 
+                p {
+                    margin: 0.5em;
+                    color: $white;
+                }
+            }
+        }
+    }
 }

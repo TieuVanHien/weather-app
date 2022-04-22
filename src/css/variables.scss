@@ -5,3 +5,10 @@ $white: #fcfcfc;
 // Fonts
 $fontBody: 'Montserrat';
 $fontHeading: 'Montserrat';
+
+@for $index from 1 through 6 {
+    h#{$index} {
+        color:$white;
+        font-family: $fontHeading;
+    }
+}

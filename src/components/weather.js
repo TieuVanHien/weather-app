@@ -2,37 +2,45 @@ import React from "react";
 import { TextField } from "@mui/material";
 
 const Weather = () => {
+  // const url = `https://api.weatherbit.io/v2.0/current?lat=35.7796&lon=-78.6382&city=Raleigh&key=56ca9e58c28c4647bc4e4834f1fb6be6`;
+
+  const today = new Date();
+  const date = `${today.getDate()}/${
+    today.getMonth() + 1
+  }/${today.getFullYear()}`;
+
   return (
     <div className="container">
       <div className="weather-container">
         <TextField
-          sx={{ bg: "white" }}
+          className="search-bar"
           id="outlined-textarea"
           label="Location"
           placeholder="Location"
+          fullWidth
         />
-        <div className="weather-card">
+        <div className="weather card">
           <div className="card-container">
             <div className="weather temp">
               <div style={{ display: "flex" }}>
-                <h3>Dallas</h3>
-                {"  "} <h3>Date</h3>
+                <h2 style={{ marginRight: "0.5em" }}>Dallas</h2>
+                <h2>{date}</h2>
               </div>
-              <h3>Sunny</h3>
-              <h1>50oC</h1>
+              <h1 className="display-1">50°F</h1>
+              <h2>Sunny</h2>
             </div>
             <div className="weather features">
               <div className="units">
-                <h3>24oF</h3>
-                <h3>Feel Like</h3>
+                <p>24°F</p>
+                <p className="font-weight-bold">Feels Like</p>
               </div>
               <div className="units">
-                <h3>70%</h3>
-                <h3>Humidity</h3>
+                <p>70%</p>
+                <p className="font-weight-bold">Humidity</p>
               </div>
               <div className="units">
-                <h3>3km/h</h3>
-                <h3>Wind Speed</h3>
+                <p>3km/h</p>
+                <p className="font-weight-bold"> Wind Speed</p>
               </div>
             </div>
           </div>
