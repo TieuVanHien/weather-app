@@ -1,0 +1,47 @@
+{
+    "data": [
+        {
+            "rh": 91,
+            "pod": "n",
+            "lon": -89.52229,
+            "pres": 998.7,
+            "timezone": "America\/Chicago",
+            "ob_time": "2022-04-22 03:06",
+            "country_code": "US",
+            "clouds": 0,
+            "ts": 1650596760,
+            "solar_rad": 0,
+            "state_code": "MS",
+            "city_name": "Raleigh",
+            "wind_spd": 1.34,
+            "wind_cdir_full": "east-southeast",
+            "wind_cdir": "ESE",
+            "slp": 1013,
+            "vis": 10,
+            "h_angle": -90,
+            "sunset": "00:32",
+            "dni": 0,
+            "dewpt": 17.4,
+            "snow": 0,
+            "uv": 0,
+            "precip": 0,
+            "wind_dir": 109,
+            "sunrise": "11:20",
+            "ghi": 0,
+            "dhi": 0,
+            "aqi": 29,
+            "lat": 32.03349,
+            "weather": {
+                "icon": "c01n",
+                "code": 800,
+                "description": "Clear sky"
+            },
+            "datetime": "2022-04-22:03",
+            "temp": 18.9,
+            "station": "FSTM6",
+            "elev_angle": -29.23,
+            "app_temp": 19.3
+        }
+    ],
+    "count": 1
+}
