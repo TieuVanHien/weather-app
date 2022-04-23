@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-Weather Web Application built with Webtherbit.io API
+Weather Web Application built with OpenWeatherMap API
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
