@@ -53,11 +53,11 @@ const Weather = () => {
                   <p className="font-weight-bold">Feels Like</p>
                 </div>
                 <div className="units">
-                  <p>{weather?.rh}%</p>
+                  <p>{weather?.rh.toFixed(0)}%</p>
                   <p className="font-weight-bold">Humidity</p>
                 </div>
                 <div className="units">
-                  <p>{weather?.wind_spd} km/h</p>
+                  <p>{weather?.wind_spd.toFixed(0)} km/h</p>
                   <p className="font-weight-bold"> Wind Speed</p>
                 </div>
               </div>
