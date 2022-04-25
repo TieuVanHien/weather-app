@@ -21,7 +21,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon start",
     "build": "nodemon build",
     "test": "nodemon test",
     "eject": "nodemon eject"
