@@ -69,6 +69,4 @@ const Weather = () => {
   );
 };
 
-//test vercel preview
-
 export default Weather;
