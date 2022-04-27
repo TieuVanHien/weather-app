@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 > Weather Web Application built with Weatherbit.io API.
-This site was built using Vercel 
+This site was deployed with Vercel 
 [Application Page](https://weather-app-iota-pearl.vercel.app/).
 
 
