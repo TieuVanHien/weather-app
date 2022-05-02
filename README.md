@@ -13,7 +13,7 @@ In the project directory, you can run:
 
 ### `npm i`
 
-Install the project and packages
+Install the project and packages and dependencies:
 
 ### `npm start`
 
