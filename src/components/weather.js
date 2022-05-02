@@ -7,6 +7,13 @@ const Weather = () => {
   const [location, setLocation] = useState("");
   const url = `https://api.weatherbit.io/v2.0/current?lat=35.7796&lon=-78.6382&city=${location}&key=56ca9e58c28c4647bc4e4834f1fb6be6`;
 
+  var today = new Date(),
+    date =
+      today.getFullYear() +
+      "/" +
+      (today.getMonth() + 1) +
+      "/" +
+      today.getDate();
   const getWeather = async (event) => {
     if (event.key === "Enter") {
       const res = await axios.get(url);
@@ -37,7 +44,7 @@ const Weather = () => {
               <div className="weather temp">
                 <div style={{ display: "flex" }}>
                   <h2 style={{ marginRight: "0.5em" }}>{weather.city_name}</h2>
-                  <h2>{weather.datetime}</h2>
+                  <h2>{date}</h2>
                 </div>
                 <h1 className="display-1">{weather.temp.toFixed(0)}°C</h1>
                 <h2>{weather?.weather?.description}</h2>
